@@ -1,0 +1,43 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("@cometchat/chat-uikit-react/css-variables.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Inter", sans-serif;
+}
+
+html, body{
+  height: 100vh;
+  width: 100vw;
+  background-color: #181818;
+}
+
+[data-theme='dark'] {
+  --cometchat-primary-color: #8432dc;
+  --cometchat-background-color-03: #181818;
+  --cometchat-extended-primary-color-500: #fbaa75;
+  --cometchat-icon-color-highlight: #8432dc;
+  --cometchat-text-color-highlight: #8432dc;
+
+  background-color: #181818;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .cometchat-message-bubble-outgoing .cometchat-message-bubble__body {
+  --cometchat-primary-color: #8432dc;
+  --cometchat-extended-primary-color-900: #8432dc;
+}
+
+
+
+
+
+
