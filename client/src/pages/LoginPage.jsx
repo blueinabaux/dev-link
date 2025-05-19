@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { authUser, notAuthUser } from "../redux/slices/authSlice";
-import { loginCometChatUser as loginUser } from "../config/cometchat"; // ✅ Should return a logged-in CometChat user
+import { loginCometChatUser as loginUser } from "../config/cometchat"; 
 
 function LoginPage() {
-  const [uid, setUid] = useState(""); // 🔑 UID input
+  const [uid, setUid] = useState(""); 
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -19,9 +19,9 @@ function LoginPage() {
     try {
       const user = await loginUser(trimmedUid);
       if (user) {
-        localStorage.setItem("cometChatUser", JSON.stringify(user)); // 🔒 Persist session
+        localStorage.setItem("cometChatUser", JSON.stringify(user)); 
         alert("Login Successful!");
-        dispatch(authUser()); // ✅ Update auth state
+        dispatch(authUser()); 
         navigate("/dashboard");
       } else {
         alert("Login failed. Invalid UID.");

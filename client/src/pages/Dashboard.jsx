@@ -13,8 +13,6 @@ function Dashboard() {
 
 
 
-
-
   const handleSelection = (item) => {
     if (item instanceof CometChat.Conversation) {
       item = item.getConversationWith();
@@ -34,29 +32,19 @@ function Dashboard() {
 
 
 
-  console.log("SELECTED USER: ", selectedUser);
-
-  
-
-
 
   return (
 
     <div className="cometchat-root relative flex h-screen w-full bg-[#181818] text-white" data-theme="dark">
 
-      {/* Sidebar */}
       <aside className="w-64 bg-[#181818]  border-r border-gray-700 flex flex-col">
-        {/* <h2 className="p-4 text-lg font-semibold border-b border-gray-700">
-          Conversations
-        </h2> */}
+       
         <div className="flex-grow overflow-y-auto">
           <CometChatSelector onSelectorItemClicked={handleSelection} />
         </div>
       </aside>
 
 
-
-      {/* Main Chat Area */}
       <main className="flex flex-col flex-grow w-full relative bg-[#181818] text-white shadow-lg overflow-hidden">
         {(selectedUser || selectedGroup) ? (
           <>

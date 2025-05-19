@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
-import { loginCometChatUser } from "../config/cometchat"; // 👈 Make sure this path is correct
+import { loginCometChatUser } from "../config/cometchat"; 
 
 function RegistrationPage() {
   const [formData, setFormData] = useState({
@@ -34,11 +34,10 @@ function RegistrationPage() {
       await createUser(uid, uid);
       alert("User registered successfully!");
 
-      // 👇 Login to CometChat after successful registration
       try {
         await loginCometChatUser(uid);
         console.log("CometChat login successful!");
-        localStorage.setItem("cometChatUser", uid); // Optional: store for layout checks
+        localStorage.setItem("cometChatUser", uid); checks
       } catch (cometError) {
         console.error("CometChat login failed:", cometError);
         alert("Registration successful, but CometChat login failed.");

@@ -119,16 +119,6 @@ function LandingPage() {
           </div>
         </Element>
 
-        {/* <div className="main-features-cards h-[100vh] w-[100vw] flex flex-col justify-center bg--700 items-center gap-[80px] ">
-
-        <div className="feat-left h-full w-[50%] flex flex-col justify-center items-center ">
-
-        </div>
-
-        <div className="feat-right h-full w-[50%] flex flex-col justify-center items-center ">
-          
-        </div>
-        </div> */}
 
         <Element name="pricing">
           <div className="pricing-section h-[100vh] w-[100vw] flex flex-col justify-center items-center gap-[80px] ">

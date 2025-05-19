@@ -1,9 +1,9 @@
 import { CometChatUIKit, UIKitSettingsBuilder } from "@cometchat/chat-uikit-react";
 
 export const COMETCHAT_CONSTANTS = {
-  APP_ID: "2756953259c1fe9f",
-  REGION: "in",
-  AUTH_KEY: "7039fcb0f0577bfb91cebdf282e5872532758805",
+ APP_ID: import.meta.env.VITE_COMETCHAT_APP_ID,
+  REGION: import.meta.env.VITE_COMETCHAT_REGION,
+  AUTH_KEY: import.meta.env.VITE_COMETCHAT_AUTH_KEY,
 };
 
 const UIKitSettings = new UIKitSettingsBuilder()
