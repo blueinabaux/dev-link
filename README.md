@@ -21,7 +21,7 @@
 ###  1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/devlink-assignment.git
+git clone https://github.com/blueinabaux/dev-link.git
 cd devlink-assignment
 ```
 
